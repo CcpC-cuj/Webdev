@@ -221,23 +221,25 @@
 	padding: 3px;
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
+	height: 70vh;
+	align-items: center;
 }
 .menu-images {
-	position: relative;
+position: relative;
 
 	
 }
 .menu-images img {
 	width: 60%;
+	position: relative;
+	left:30px;
 }
 #breakfast{
 	position: relative;
-
-	bottom:10%;
 }
 #lunch{
 	position: relative;
-	top:40%;
+
 	left:30%;
 }
 
