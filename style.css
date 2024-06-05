@@ -485,91 +485,89 @@
 	}
 }
 
-.container{
+.container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 20px;
 	justify-items: center;
-  	flex-wrap: wrap;
-  	justify-content: center;
-  	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
 	margin: 10px;
+  }
 
+  .flip-card {
+	perspective: 1000px;
+	width: 50vh;
+	height: 50vh;
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
 
-}
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 
-.flip-card {
-  perspective: 1000px;
-  width: 50vh;
-  height: 50vh;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .flip-card-front,
+  .flip-card-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+  }
 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+  .flip-card-front {
+	background-color: transparent;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+  }
 
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
+  .flip-card-front img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+  }
 
-.flip-card-front {
-  background-color: transparent;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-}
+  .flip-card-back {
+	transform: rotateY(180deg);
+	box-sizing: border-box;
+	background-color: #bbb;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 15px;
+  }
 
-.flip-card-front img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
+  .flip-card-back .content-container {
+	padding: 15px;
+	height: 100%;
+	overflow-y: auto;
+  }
 
-.flip-card-back {
-  transform: rotateY(180deg);
-  box-sizing: border-box;
-  background-color: #bbb;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 15px;
-}
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
 
-.flip-card-back .content-container {
-  padding: 15px;
-  height: 100%;
-  overflow-y: auto;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-text {
-  position: absolute;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 5px;
-}
+  .flip-text {
+	position: absolute;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	border-radius: 5px;
+  }
