@@ -192,10 +192,7 @@
 	 align-items: center;
  }
  .stuffed-cherries {
-	 background:url(image/our\ story.jfif)  no-repeat center center ;
-	 background-size: cover;
-	 height: 315px;
-	 width: 320px;
+	 
 	
 }
  .center-h1 {
@@ -221,17 +218,28 @@
 }
 /* MENU SECTION */
 .menu {
-	padding: 30px;
+	padding: 3px;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
 }
 .menu-images {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 10px;
+	position: relative;
+
+	
 }
 .menu-images img {
-	width: 100%;
+	width: 60%;
 }
+#breakfast{
+	position: relative;
 
+	bottom:10%;
+}
+#lunch{
+	position: relative;
+	top:40%;
+	left:30%;
+}
 
 /* THE PERFECT BLEND SECTION */
  .cake-background {
