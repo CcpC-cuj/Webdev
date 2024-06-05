@@ -13,9 +13,10 @@ $(document).ready(function() {
       }
     });
   
-    AOS.init({      
+    AOS.init({
           duration: 1800,
       easing: 'ease'
     });
      
   })
+  
