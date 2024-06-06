@@ -24,7 +24,7 @@
 /* HEADER */
  header {
 	 min-height: 100vh;
-	 background: linear-gradient(to bottom, rgba(0, 0, 0, .8), transparent), url(image/Free\ \ Flame\,\ Black\,\ Heat\ Background\ Images\,\ Wok\ Pan\ Cooking\ Utensil\ Kitchen\ Utensil\ Background\ Photo\ Background\ PNG\ and\ Vectors.jfif) no-repeat center center;
+	 background: linear-gradient(to bottom, rgba(0, 0, 0, .8), transparent), url(image/Yellow\ Simple\ Background\ Psd\ Format\ For\ Food\ Illustrations\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jfif) no-repeat center center;
 	 background-size: cover;
 	 background-attachment: fixed;
 	 display: flex;
@@ -85,20 +85,54 @@
 	 text-transform: uppercase;
 }
  header nav div ul li a {
-	 display: block;
-	 color: lightgray;
-	 padding: 15px 5px;
-	 transition: all 0.4s;
+	color: #FFF;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
 }
- header nav div ul li a:hover, header nav div ul li a .active:hover {
-	 color: #3687d3;
-	 border-bottom-color: #be8040;
+ 
+div.navbar a:before, div.navbar a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
 }
+
+div.navbar a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.navbar a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.navbar a:hover:before, div.navbar a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+/* List items style reset */
+li {
+    list-style-type: none;
+}
+
  header .center {
 	 line-height: 0;
 	 margin: auto;
 	 text-align: center;
-	 color: #a90f0f;
+	 color: #151b8e;
 }
  header .center h1 {
 	 font-family: 'Alex Brush', cursive !important;
@@ -191,10 +225,6 @@
 	 flex-direction: column;
 	 align-items: center;
  }
- .stuffed-cherries {
-	 
-	
-}
  .center-h1 {
 	 display: flex;
 	 justify-content: center;
@@ -202,7 +232,7 @@
 }
  .custom-h1 {
 	 text-align: center;
-	 color: #fff;
+	 color: #110c0c;
 	 letter-spacing: 5px;
 	 margin-bottom: 0;
 }
@@ -555,8 +585,8 @@ position: relative;
   .flip-card-back {
 	transform: rotateY(180deg);
 	box-sizing: border-box;
-	background-color: #bbb;
-	color: white;
+	background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);;
+	color: rgb(95, 17, 17);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -568,6 +598,7 @@ position: relative;
 	padding: 15px;
 	height: 100%;
 	overflow-y: auto;
+	
   }
 
   .flip-card:hover .flip-card-inner {
@@ -581,3 +612,4 @@ position: relative;
 	padding: 10px;
 	border-radius: 5px;
   }
+
