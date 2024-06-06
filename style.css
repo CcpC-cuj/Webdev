@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Alex+Brush|Overpass+Mono:600,700');
  @import url('https://fonts.googleapis.com/css?family=PT+Sans');
  body {
+  position: relative;
 	 overflow-x: hidden;
+   right:0px;
 }
 /* GLOBAL */
  h2 {
@@ -350,12 +352,12 @@ position: relative;
 	 border-bottom: solid 1px;
 }
 /* MEDIA QUERIES */
- @media screen and (max-width: 425px) {
+ @media screen and (min-width: 425px) {
 	 header, .bread-background, .cake-background {
 		 background-attachment: scroll;
 	}
 }
- @media (max-width: 768px) {
+ @media (min-width: 768px) {
 	 footer .restaurant-info {
 		 flex-direction: row;
 		 justify-content: space-around;
@@ -366,6 +368,7 @@ position: relative;
 	/* NAV */
 	/* FOOTER */
 	 nav {
+    flex-direction: column;
 		 position: initial !important;
 		 align-items: baseline;
 		 padding: 20px 70px !important;
@@ -427,18 +430,19 @@ position: relative;
   }
   
   .menu-images img {
-    width: 60%;
-    position: relative;
+    width: 30%;
+    
     left: 30px;
   }
   
   #breakfast {
     position: relative;
+
   }
   
   #lunch {
     position: relative;
-    left: 30%;
+    left: 60%;
   }
 	 .menu div:last-child {
 		 flex: 1;
