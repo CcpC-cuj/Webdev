@@ -375,7 +375,7 @@ position: relative;
     flex-direction: column;
 		 position: initial !important;
 		 align-items: baseline;
-		 padding: 20px 70px !important;
+		 padding: 20px 0px !important;
 	}
 	 #logo{
 		padding-left:6rem;
