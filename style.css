@@ -394,6 +394,16 @@ position: relative;
 	 flex-direction: column;
 	 align-items: center;
 }
+footer .hours{
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1.5fr;
+	align-items: center;
+    justify-items: center;
+}
+.hours div{
+	padding:10px;
+	margin:5px;
+}
  footer .copyright {
 	 background: #232323;
 	 color: #969696;
@@ -538,7 +548,7 @@ position: relative;
 		 flex: 1;
 	}
 	 footer .restaurant-info {
-		 padding: 20px 80px;
+		padding: 35px 40px;
 		display: block;
 	}
 	 footer .restaurant-info .locations {
