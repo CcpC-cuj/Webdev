@@ -352,9 +352,10 @@ position: relative;
 	 border-bottom: solid 1px;
 }
 /* MEDIA QUERIES */
- @media screen and (min-width: 425px) {
-	 header, .bread-background, .cake-background {
+ @media screen and (min-width:300px) {
+	 .main-content,header, .bread-background, .cake-background {
 		 background-attachment: scroll;
+		 overflow-x: hidden;
 	}
 }
  @media (min-width: 768px) {
@@ -372,6 +373,9 @@ position: relative;
 		 position: initial !important;
 		 align-items: baseline;
 		 padding: 20px 70px !important;
+	}
+	 #logo{
+		padding-left:6rem;
 	}
 	 nav .nav-button {
 		 display: none;
