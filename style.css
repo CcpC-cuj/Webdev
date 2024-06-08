@@ -352,11 +352,11 @@ position: relative;
 	 border-bottom: solid 1px;
 }
 /* MEDIA QUERIES */
- @media screen and (min-width: 425px) {
-	 header, .bread-background, .cake-background {
+ @media screen and (min-width:300px) {
+	 .main-content,header, .bread-background, .cake-background {
 		 background-attachment: scroll;
+		 overflow-x: hidden;
 	}
-}
  @media (min-width: 768px) {
 	 footer .restaurant-info {
 		 flex-direction: row;
@@ -368,10 +368,12 @@ position: relative;
 	/* NAV */
 	/* FOOTER */
 	 nav {
-    flex-direction: column;
+		 width:100%;
+                 flex-direction: column;
+		 overflow-x:hidden;
 		 position: initial !important;
 		 align-items: baseline;
-		 padding: 20px 70px !important;
+		 padding: 20px 0px !important;
 	}
 	 nav .nav-button {
 		 display: none;
@@ -381,6 +383,9 @@ position: relative;
 		 background: none !important;
 		 opacity: initial !important;
 		 transform: initial !important;
+	}
+	#logo{
+		padding-left:6rem;
 	}
 	 nav div ul {
 		 position: initial !important;
