@@ -12,19 +12,34 @@
         <nav>
           <h2><a href="#" id="logo">Swastik </a></h2>
           <button class="nav-button fa fa-bars"></button>
-          <div class="navbar">
-      <!--     <ul> -->
-            <ul>
-              <button class="exit-menu fa fa-times"></button>
-              <li><a href="#" class="active">Home</a></li>
-              <li><a href="#">menu</a></li>
-              <li><a href="#">reservations</a></li>
-              <li><a href="#">Offers</a></li>
-              <li><a href="#Contact">contact</a></li>
-              
+          <div class ="navbar "><!-- Fixed Navigation Bar all buttons on right side-->
+                <!-- Desktop view navigation -->
+                <div class="nav-desktop ">
+                <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">reservations</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#Contact">contact</a></li>
             </ul>
-      <!--     </ul> -->
-          </div>
+                </div>
+            <!-- Responsive view navigation -->
+                <div class="nav-responsive" id="myNav">
+                    <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">reservations</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#Contact">contact</a></li>
+                    </ul>
+                </div>
+                <div class="bar-container" id="container"onclick="toggleNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
         </nav>
         <div class="center">
           <h1 class="alex-brush">Welcome</h1>
@@ -223,6 +238,6 @@
   <script>
   AOS.init();
   </script>
-<script src="script.js"></script>   
+<script src="script.js"></script>
 </body>
 </html>
