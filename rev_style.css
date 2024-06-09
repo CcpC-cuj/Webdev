@@ -1,0 +1,108 @@
+
+.revcontainer {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header #center {
+
+	text-align: center;
+	color: #151b8e;
+}
+
+header #center h1 {
+	font-family: 'Alex Brush', cursive !important;
+	color: #000000;
+	font-size: 80px;
+	margin-bottom: 34px;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background: linear-gradient(60deg, #6d6d6d 0%,#b7b7b7 50%, #6d6d6d 100%);
+    color: #000000;
+    padding: 0 5px;
+    pointer-events: none;
+    border-radius: 50px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #6d6d6d;
+    border-radius: 4px;
+    padding-top: 25px; /* Increase the top padding to make space for the label */
+}
+
+.form-group input:focus + label,
+.form-group select:focus + label,
+.form-group textarea:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group select:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: 0px;
+    left:0;
+    font-size: 18px;
+}
+
+#submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+#privateEventFields {
+    display: none;
+}
+#address {
+    width: calc(50% - 5px); /* Adjusted width to fit both fields side by side with spacing */
+}
+#budget {
+    width: calc(50% - 5px); /* Adjusted width to fit both fields side by side with spacing */
+    
+}
+/* CSS for Address and Budget labels */
+#address:focus + label,
+#budget:focus + label,
+#address:not(:placeholder-shown) + label{
+    top: 0px;
+    left:0px;
+    font-size: 18px;
+
+}
+#budget:not(:placeholder-shown) + label {
+    top: 0px;
+    left: calc(50% );
+    font-size: 18px;
+}
