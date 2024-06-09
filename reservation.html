@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rev_style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <h2><a href="#" id="logo">Swastik </a></h2>
+          
+          <div class ="navbar "><!-- Fixed Navigation Bar all buttons on right side-->
+                <!-- Desktop view navigation -->
+                <div class="nav-desktop ">
+                <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="reservation.html">reservations</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#Contact">contact</a></li>
+            </ul>
+                </div>
+            <!-- Responsive view navigation -->
+                <div class="nav-responsive" id="myNav">
+                    <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="reservation.html">Reservations</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#Contact">contact</a></li>
+                    </ul>
+                </div>
+                <div class="bar-container" id="container"onclick="toggleNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+        </nav>
+        <div id="center">
+            <div class="revcontainer">
+                <h1>Reservation</h1>
+                <form id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="date" id="date" name="date" required>
+                            <label for="date">Date</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" id="time" name="time" required>
+                            <label for="time">Time</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="reservationType" name="reservationType" required>
+                                <option value="" disabled selected>Select Type</option>
+                                <option value="dineIn">Dine In</option>
+                                <option value="privateEvent">Private Event</option>
+                            </select>
+                            <label for="reservationType">Type of Reservation</label>
+                        </div>
+                    </div>
+                    <div id="dineInFields" class="form-group">
+                        <input type="number" id="guests" name="guests" required>
+                        <label for="guests">Number of Guests</label>
+                    </div>
+                    <div id="privateEventFields" class="form-group">
+                        <input type="text" id="address" name="address" >
+                        <label for="address">Event Address</label>
+                        <input type="text" id="budget" name="budget" >
+                        <label for="budget">Budget</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="menuPreferences" name="menuPreferences" ></textarea>
+                        <label for="menuPreferences">Menu Preferences</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="notes" name="notes" ></textarea>
+                        <label for="notes">Notes</label>
+                    </div>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+      </header>
+      <footer>
+        <button class="to-top"><i class="fa fa-chevron-up"></i>TOP</button>
+        
+        <div class="restaurant-info">
+        
+          <div class="locations">
+            <h4>LOCATIONS &#8212;</h4>
+            <div class="location-1">
+              <h5>Manatu Village<br />CUJ,   RANCHI &#8212; 853222</h5>
+            </div><!--location-1-->
+        
+          </div><!--locations end-->
+      
+          <div class="hours">
+            <h4>HOURS &#8212;</h4>
+            <div class="weekdays">
+              <h5>Monday - Friday<br />
+                8:00am - 7:00pm
+              </h5>
+            </div><!--weekdays end-->
+            
+            <div class="weekends">
+              <h5>Saturday-Sunday<br />
+                4:00pm - 7:00pm
+              </h5>
+            </div><!--weekends end-->
+            <div></div>
+            <div class="private-events">
+              <h5>Available for private<br />
+                events 
+              </h5>
+            </div>
+            <div id="Contact">
+              
+              <h5>Contact:- 8934076522</h5>
+            </div>
+            
+          </div><!--hours end-->
+          
+        </div><!--restaurant-info end-->
+        
+        
+      </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
