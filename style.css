@@ -439,9 +439,7 @@ footer .hours{
     flex-direction: row;
 		 
 	}
-	 #logo{
 	
-	}
 	 nav .nav-button {
 		 display: none;
 	}
@@ -567,10 +565,7 @@ footer .hours{
 	 footer .restaurant-info .hours h4 {
 		 flex: 1 0 100%;
 	}
-	 footer .copyright {
-		 flex-direction: row;
-		 justify-content: space-around;
-	}
+	
 }
 /* ANIMATIONS */
  #asterisk {

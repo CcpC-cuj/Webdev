@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <!-- font-awesome -->
+   
+    <!-- styles -->
+    <link rel="stylesheet" href="menu_styles.css" />
+  </head>
+  <body>
+    <section class="Header">
+    <header>
+      <nav>
+        <h2><a href="#" id="logo">Swastik </a></h2>
+        <button class="nav-button fa fa-bars"></button>
+        <div class ="navbar "><!-- Fixed Navigation Bar all buttons on right side-->
+              <!-- Desktop view navigation -->
+              <div class="nav-desktop ">
+              <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="menu.html">menu</a></li>
+              <li><a href="reservation.html">reservations</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#Contact">contact</a></li>
+          </ul>
+              </div>
+          <!-- Responsive view navigation -->
+              <div class="nav-responsive" id="myNav">
+                  <ul>
+                  <li><a href="index.html" class="active">Home</a></li>
+                  <li><a href="menu.html">menu</a></li>
+                  <li><a href="reservation.html">Reservations</a></li>
+                  <li><a href="#">Offers</a></li>
+                  <li><a href="#Contact">contact</a></li>
+                  </ul>
+              </div>
+              <div class="bar-container" id="container"onclick="toggleNav()">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+              </div>
+          </div>
+      </div>
+      </nav>
+     </section>
+
+
+
+    <section class="menu">
+      <!-- title -->
+      <div class="title">
+        <h2>Our menu</h2>
+        <div class="underline"></div>
+      </div>
+      <!-- filter buttons -->
+      <div class="btn-container">
+        <button class="filter-btn" type="button" data-category="all">All</button>
+        <button class="filter-btn" type="button" data-category="Sanghai">Sanghai</button>
+        <button class="filter-btn" type="button" data-category="Pasta">Pasta</button>
+        <button class="filter-btn" type="button" data-category="Chowmin">Chowmin</button>
+        <button class="filter-btn" type="button" data-category="Roll">Rolls</button>
+        <button class="filter-btn" type="button" data-category="Maggie">Maggie</button>
+        <button class="filter-btn" type="button" data-category="Rice">Rice</button>
+        <button class="filter-btn" type="button" data-category="Burger">Burger</button>
+      </div>
+      <!-- menu items -->
+      <div class="section-center">
+        <article class="menu-item">
+          <img src="" class="photo" alt="menu-item">
+          <div class="item-info">
+           
+          </div>
+        </article> 
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+      <button class="to-top"><i class="fa fa-chevron-up"></i>TOP</button>
+      
+      <div class="restaurant-info">
+      
+        <div class="locations">
+          <h4>LOCATIONS &#8212;</h4>
+          <div class="location-1">
+            <h5>Manatu Village<br />CUJ,   RANCHI &#8212; 853222</h5>
+          </div><!--location-1-->
+      
+        </div><!--locations end-->
+    
+        <div class="hours">
+          <h4>HOURS &#8212;</h4>
+          <div class="weekdays">
+            <h5>Monday - Friday<br />
+              8:00am - 7:00pm
+            </h5>
+          </div><!--weekdays end-->
+          
+          <div class="weekends">
+            <h5>Saturday-Sunday<br />
+              4:00pm - 7:00pm
+            </h5>
+          </div><!--weekends end-->
+          <div></div>
+          <div class="private-events">
+            <h5>Available for private<br />
+              events 
+            </h5>
+          </div>
+          <div id="Contact">
+            
+            <h5>Contact:- 8934076522</h5>
+          </div>
+          
+        </div><!--hours end-->
+        
+      </div><!--restaurant-info end-->
+      
+      
+    </footer>
+
+
+
+
+    <!-- javascript -->
+    <script src="menu_script.js"></script>
+  </body>
+</html>
