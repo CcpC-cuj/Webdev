@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles specific to offers.html */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Set your desired background color */
+            color: #333; /* Text color for readability */
+            text-align: center;
+            position: relative; /* Ensure relative positioning for proper stacking */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative; /* Ensure relative positioning for proper stacking */
+            z-index: 1; /* Ensure content appears above the background */
+        }
+
+        .offer-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            z-index: 0; /* Ensure this layer is behind the main content */
+        }
+
+        .offer {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            opacity: 0; /* Hidden by default */
+            transform: translateY(50px); /* Start off-screen */
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .offer.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="reservation.html">Reservations</a>
+                <a href="offers.html" class="active">Offers</a>
+                <a href="#Contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Main content of the page -->
+        <h1>Welcome to Our Offers Page</h1>
+        <p>Explore our latest offers and promotions below:</p>
+    </main>
+
+    <!-- Animated offers section -->
+    <section class="offer-container">
+        <div class="offer" id="deliveryFee">
+            <h2>Delivery Fee</h2>
+            <p>Free delivery on orders above $50</p>
+        </div>
+        <div class="offer" id="buyOneGetOne">
+            <h2>Buy 1 Get 1 Offer</h2>
+            <p>Get a free item on every purchase of equal or greater value</p>
+        </div>
+        <div class="offer" id="birthdayArrangements">
+            <h2>Birthday Arrangements</h2>
+            <p>Book your birthday party with us and get special decorations and discounts</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="restaurant-info">
+            <div class="locations">
+                <h4>LOCATIONS &#8212;</h4>
+                <div class="location-1">
+                    <h5>Manatu Village<br />CUJ, RANCHI &#8212; 853222</h5>
+                </div>
+            </div>
+            <div class="hours">
+                <h4>HOURS &#8212;</h4>
+                <div class="weekdays">
+                    <h5>Monday - Friday<br />
+                    8:00am - 7:00pm
+                    </h5>
+                </div>
+                <div class="weekends">
+                    <h5>Saturday-Sunday<br />
+                    4:00pm - 7:00pm
+                    </h5>
+                </div>
+                <div class="private-events">
+                    <h5>Available for private<br />
+                    events 
+                    </h5>
+                </div>
+                <div id="Contact">
+                    <h5>Contact:- 8934076522</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for animating offers -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Select all offers
+            const offers = document.querySelectorAll('.offer');
+
+            // Function to animate offers
+            function animateOffers() {
+                offers.forEach((offer, index) => {
+                    setTimeout(() => {
+                        offer.classList.add('show');
+                    }, index * 500); // Adjust the delay as needed
+                });
+            }
+
+            // Call the animation function
+            animateOffers();
+        });
+    </script>
+</body>
+</html>
