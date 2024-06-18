@@ -188,7 +188,7 @@ li {
 }
 
  header .center {
-	 line-height: 0;
+	 line-height: 4px;
 	 margin: auto;
 	 text-align: center;
 	 color: #151b8e;
