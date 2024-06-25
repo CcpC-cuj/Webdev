@@ -90,7 +90,7 @@ function handleReservation(formData) {
     const encodedMessage = encodeURIComponent(smsMessage);
 
     // Compose SMS URL
-    const smsUrl = `sms:1234567890?body=${encodedMessage}`;
+    const smsUrl = `sms:8934076522?body=${encodedMessage}`;
 
     // Open SMS application with the composed URL
     window.location.href = smsUrl;
