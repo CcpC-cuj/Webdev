@@ -43,7 +43,7 @@ Available for private events.
 
 - **Phone:** 8934076522
 
-Reservation
+## Reservation
 To make a reservation, visit our reservation page and fill out the form with your name, number of people, and preferred date and time. When you click the submit button, a prompt will generate an SMS with this information. Simply tap "Send" to complete your reservation.
 
 For more information, visit our website.
