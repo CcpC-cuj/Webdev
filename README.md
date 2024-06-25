@@ -43,10 +43,9 @@ Available for private events.
 
 - **Phone:** 8934076522
 
-## Reservation
+Reservation
+To make a reservation, visit our reservation page and fill out the form with your name, number of people, and preferred date and time. When you click the submit button, a prompt will generate an SMS with this information. Simply tap "Send" to complete your reservation.
 
-To make a reservation, use our convenient SMS-based technology. Simply send an SMS to 8934076522 with your name, the number of people, and your preferred date and time. We will confirm your reservation promptly.
+For more information, visit our website.
 
-For more information, visit our [website](https://ccpc-cuj.github.io/Webdev/).
-
-Thank you for choosing Swastik Eatery! We look forward to serving you.
+Thank you for choosing Swastik! We look forward to serving you.
