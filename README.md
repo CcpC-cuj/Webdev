@@ -55,8 +55,6 @@ Thank you for choosing Swastik! We look forward to serving you.
 
 ## [GitHub Contributors](https://github.com/CcpC-cuj/Webdev/graphs/contributors)
 
-## Contributors
-
 This project is made possible by the contributions of the following team members:
 
 - **[Akash Kumar](https://github.com/Akashkzp)**
