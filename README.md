@@ -49,3 +49,17 @@ To make a reservation, visit our reservation page and fill out the form with you
 For more information, visit our website.
 
 Thank you for choosing Swastik! We look forward to serving you.
+
+
+
+
+## [GitHub Contributors](https://github.com/CcpC-cuj/Webdev/graphs/contributors)
+
+## Contributors
+
+This project is made possible by the contributions of the following team members:
+
+- **[Akash Kumar](https://github.com/Akashkzp)**
+- **[Apurba Das](https://github.com/apurbasbjk30)** 
+- **[Krish Kumar](https://github.com/Imkkrish)** 
+- **[Siya Mandal](https://github.com/siya2910)** 
