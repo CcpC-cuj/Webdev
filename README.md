@@ -1,7 +1,6 @@
 # Swastik - THE TASTE OF ONENESS
-# Swastik Eatery
 
-Welcome to Swastik Eatery! This project showcases our mission, menu, and customer reviews. We aim to support NGOs while providing fresh, high-quality food.
+Welcome to Swastik Eatery! This project showcases our mission, menu, customer reviews, and the SMS-based reservation system.
 
 ## Table of Contents
 
@@ -14,24 +13,27 @@ Welcome to Swastik Eatery! This project showcases our mission, menu, and custome
 
 ## About Us
 
-Swastik Eatery supports NGOs aiding children and the elderly, serving delicious meals with a positive community impact.
+Swastik Eatery is dedicated to supporting NGOs that assist children and the elderly. Our mission is to positively impact the community while serving delicious and high-quality meals.
 
 ## Menu
 
-Our menu includes a variety of freshly prepared snacks for students, with vegan and non-vegan options.
+Our menu features a variety of snacks suitable for students, with both vegan and non-vegan options. All items are freshly prepared daily to ensure maximum flavor and satisfaction. Visit us to enjoy our mouthwatering selection at affordable prices.
 
 ## Customer Reviews
 
-Our customers appreciate our hygiene, fast delivery, and fresh food. Here are a few testimonials:
-- **Krish Choudhary:** "Best hygiene and clean environment."
+Our customers appreciate the hygiene, fast delivery, and fresh, high-quality food. Here are some of their testimonials:
+
+- **Krish Choudhary:** "Best hygiene and a clean environment."
 - **Apurba Das:** "Fast delivery, even for emergency orders."
 - **Siya Mandal:** "Serves quality food straight out of the pan."
 - **Akash Kumar:** "Polite staff and amazing service."
 
 ## Location and Hours
 
-**Location:** Manatu Village, CUJ, Ranchi — 853222  
-**Hours:** 
+**Location:**
+- Manatu Village, CUJ, Ranchi — 853222
+
+**Hours:**
 - Monday - Friday: 8:00 am - 7:00 pm
 - Saturday-Sunday: 4:00 pm - 7:00 pm
 
@@ -39,11 +41,11 @@ Available for private events.
 
 ## Contact Information
 
-**Phone:** 8934076522
+- **Phone:** 8934076522
 
 ## Reservation
 
-To make a reservation, please send an SMS to 8934076522 with your name, the number of people, and the preferred date and time. We will confirm your reservation promptly.
+To make a reservation, use our convenient SMS-based technology. Simply send an SMS to 8934076522 with your name, the number of people, and your preferred date and time. We will confirm your reservation promptly.
 
 For more information, visit our [website](https://ccpc-cuj.github.io/Webdev/).
 
